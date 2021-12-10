@@ -3,4 +3,4 @@ HDF_NAME = "ebaz4205_top.xsa"
 
 HDF_MACHINE = ""
 
-SRCREV = "ae46e939bb43424bba9435524f5aee263a23384d"
+SRCREV = "869dc601c5fe2d263a5ae516ade635f0f9cb5234"
