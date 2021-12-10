@@ -1,4 +1,4 @@
-HDF_PATH = "github.com/embed-me/ebaz4205_xsa.git;branch=rel-v2020.1"
+HDF_PATH = "github.com/neg2led/ebaz4205_xsa.git;branch=rel-v2020.2"
 HDF_NAME = "ebaz4205_top.xsa"
 
 HDF_MACHINE = ""
