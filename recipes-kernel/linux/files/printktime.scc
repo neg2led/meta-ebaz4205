@@ -1,0 +1,4 @@
+define KFEATURE_DESCRIPTION "Enable printk() timestamps"
+define KFEATURE_COMPATIBILITY all
+
+kconfig hardware printktime.cfg

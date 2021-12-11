@@ -2,6 +2,9 @@ def uenv_populate(d):
     # populate the environment values
     env = {}
 
+    # need at least a second or the gpios haven't settled and it thinks S2 is held down
+    env["bootdelay"] = "1"
+
     env["machine_name"] = d.getVar("MACHINE")
 
     env["kernel_image"] = d.getVar("KERNEL_IMAGETYPE")
@@ -14,7 +17,7 @@ def uenv_populate(d):
     #       in another recipe?
     env["ramdisk_image"] = "ebaz4205-image-standard-ebaz4205-zynq7.cpio.gz.u-boot"
     env["loadramdisk"] = "load mmc 0 ${ramdisk_load_address} ${ramdisk_image}"
-    
+
     env["bootargs"] = d.getVar("KERNEL_BOOTARGS")
 
     bitstream, bitstreamtype = boot_files_bitstream(d)
